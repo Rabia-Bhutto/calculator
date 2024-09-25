@@ -1,0 +1,91 @@
+/* Font */
+@font-face {
+    font-family: rob-reg;
+    src: url(../Fonts/Roboto-Regular.ttf);
+}
+
+/* Universal Selector */
+* {
+    font-family: rob-reg;
+}
+
+/* Body */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../Images/bg.jpeg');
+}
+
+/* The Calc Section */
+.calc {
+    background-color: black;
+    width: 300px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px 9px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 15px 9px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 15px 9px rgba(0,0,0,0.75);
+}
+
+/* Input field of the calculator */
+input {
+    width: 255px;
+    height: 70px;
+    background-color: #b0c473;
+    border: none;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+/* Flex box for each row of buttons */
+.flex-div {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+/* Buttons */
+.btn {
+    display: flex;
+    justify-content: center;
+    width: 18px;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+}
+
+/* Buttons having more width */
+.btn-1 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    /* border: 1px solid black; */
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: grey;
+    color: white;
+    width: 85px;
+    cursor: pointer;
+}
+
+/* The operations buttons(in yellow) */
+.btn-2 {
+    display: flex;
+    justify-content: center;
+    width: 18px;
+    font-size: 30px;
+    /* border: 1px solid black; */
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #FFBF00;
+    color: white;
+    cursor: pointer;
+}
